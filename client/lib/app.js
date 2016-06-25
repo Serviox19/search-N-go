@@ -1,5 +1,4 @@
-import angular from 'angular';
-import angularMeteor from 'angular-meteor';
+import { angularMeteor } from 'angular-meteor';
 
 var app = angular.module('startup', ['angular-meteor', 'ui.router']);
 

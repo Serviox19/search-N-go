@@ -1,3 +1,5 @@
-var app = angular.module('startup', []);
+var app = angular.module('places');
 
-app.controller('placesSearch')
+app.controller('placesSearch', ['$scope', '$http', function($scope, $http) {
+
+}]);

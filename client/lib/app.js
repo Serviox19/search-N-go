@@ -1,6 +1,6 @@
 import { angularMeteor } from 'angular-meteor';
 
-var app = angular.module('startup', ['angular-meteor', 'ui.router']);
+var app = angular.module('places', ['angular-meteor', 'ui.router']);
 
 app.config(['$urlRouterProvider', '$stateProvider', '$locationProvider', function($urlRouterProvider, $stateProvider, $locationProvider){
 
@@ -15,7 +15,7 @@ app.config(['$urlRouterProvider', '$stateProvider', '$locationProvider', functio
   .state('placesInfo',{
     url: '/places/:placesId',
     templateUrl: 'client/views/places-details.ng.html',
-    controller: 'placesDetails'
+    controller: ''
   })
 
   $locationProvider.html5Mode(true);

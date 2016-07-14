@@ -10,12 +10,12 @@ app.config(['$urlRouterProvider', '$stateProvider', '$locationProvider', functio
   .state('home', {
     url: '/',
     templateUrl: 'client/views/home.ng.html',
-    controller: ''
+    controller: 'placesSearch'
   })
-  .state('second',{
-    url: '/two',
-    templateUrl: 'client/views/second.ng.html',
-    controller: ''
+  .state('placesInfo',{
+    url: '/places/:placesId',
+    templateUrl: 'client/views/places-details.ng.html',
+    controller: 'placesDetails'
   })
 
   $locationProvider.html5Mode(true);
